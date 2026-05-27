@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+   padding: 0;
+   box-sizing: border-box; 
+   margin: 0;
+}
+
+.container-header{
+    width: 100%;
+    height: 120px;
+    background-color: #5271FF;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_chelomania{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding-left: 70px;
+}
+
+.container-nav{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-direction: row;
+    color: white;
+    gap: 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.container-barra-pesquisa{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.barra-pesquisa{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    padding-right: 35px;
+    font-size: 16px;
+    padding-left: 15px;
+    
+}
+
+.icone-lupa{
+ position: absolute;
+ right: 10px;
+}
+
+.container-bag-e-login{
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    flex-direction: row;
+    gap: 15px;
+    padding-right: 70px;
+
+}
