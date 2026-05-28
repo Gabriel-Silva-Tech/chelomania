@@ -18,7 +18,7 @@ function Carrinho({ cart, removeItem,updateQty }){
     return(
         <>
         <Header />
-            <main>
+            <main className="container-carrinho">
                 <section className="pagina-carrinho">
                     {cart.map((item) => (
                         <div className="item-carrinho" key={item.id}>

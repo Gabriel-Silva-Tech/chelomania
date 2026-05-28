@@ -10,7 +10,7 @@ function ProdutosIndividuais( {addItem}){
     return(
         <>
         <Header />
-        <main> 
+        <main className="container-produto"> 
              <figure className="produto">
                 <img src={Produto1} alt="Chinelo Nuvem SoftStep Ultra"/>
                 <div className="img-posicoes-produto"> 

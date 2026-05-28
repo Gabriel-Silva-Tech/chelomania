@@ -50,6 +50,7 @@ function Produtos(){
                  <button>GG</button>
             </div>
         </div>
+        
             <div className="filtro-cor">
                 <p> <span> Cor </span></p>
                 <div className="cores">
@@ -66,7 +67,8 @@ function Produtos(){
                 <input className="cor-faixa-preco" type="range" min="0" max="300" />
             </div>
         </aside>
-        <section className="cards-de-produtos">
+    <div className="container-cards">
+        <section className="cards-de-produtos1">
             <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>                    
                 <img src={Produto1} alt="Chinelo Nuvem SoftStep Ultra"/>
                 <p>Chinelo Nuvem SoftStep Ultra</p>
@@ -77,6 +79,8 @@ function Produtos(){
                  <p>Conjunto Fitness Active Laranja</p>
                  <p className="preco">R$ 159,90</p>
              </div>
+        </section>
+        <section className="cards-de-produtos2">
             <div className="card-produto">
                 <img src={Produto3} alt="Camiseta preta lisa"/>
                 <p>Camiseta Básica Comfort Preta</p>
@@ -123,6 +127,7 @@ function Produtos(){
                 <p className="preco"> R$ 119,90</p>
              </div>
         </section>
+        </div>
     </div>
         </main>
 

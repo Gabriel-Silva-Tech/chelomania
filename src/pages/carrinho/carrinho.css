@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-main {
+.container-carrinho {
     display: flex;
     gap: 30px;
     padding: 40px 5%;
