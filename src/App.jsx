@@ -14,6 +14,7 @@ function App (){
 
     const [cart, setCart] = useState ([])
     const addItem = (produto) => {
+        console.log("addItem chamado", produto)
         setCart([...cart, produto])
  }
 
