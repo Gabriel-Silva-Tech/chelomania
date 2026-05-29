@@ -2,8 +2,8 @@ import Header from "../../components/header/header.jsx"
 import Footer from "../../components/footer/footer.jsx"
 import { useState } from "react";
 import "./suporte.css"
-import rastrearpedido from "../../assets/images/acompanhe_entrega.svg"
 import trocadevolucao from "../../assets/images/troca_devolucao.svg"
+import rastrearpedido from "../../assets/images/acompanhe_entrega.svg"
 import atendimento from "../../assets/images/atendimento_humano.svg"
 
 
