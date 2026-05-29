@@ -1,4 +1,8 @@
 import Header from "../../components/header/header.jsx"
+import Footer from "../../components/footer/footer.jsx"
+import "../login/login.css"
+import "./cadastro.css"
+
 
 function Cadastro (){
 
@@ -26,6 +30,8 @@ function Cadastro (){
         </div>
     </div>
 </div>
+
+<Footer />
   </>
     )
 }

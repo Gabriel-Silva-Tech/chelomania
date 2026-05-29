@@ -1,4 +1,5 @@
 import Header from "../../components/header/header.jsx"
+import Footer from "../../components/footer/footer.jsx"
 import Banner from "../../assets/images/banner_home.svg"
 import Produto1 from "../../assets/images/chinelo_nuvem.svg"
 import Produto2 from "../../assets/images/conjunto_esportivo.svg"
@@ -116,6 +117,7 @@ function Home(){
                 </div>
             </section>
         </main>
+         <Footer />
     </>
     )
 }

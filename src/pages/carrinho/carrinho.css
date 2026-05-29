@@ -84,8 +84,8 @@
 }
 
 .Resumo-pedido {
-    width: 370px;
-    height: 450px;
+    width: 340px;
+    height: 400px;
     background: white;
     border-radius: 12px;
     padding: 20px;
@@ -93,6 +93,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 30px;
 }
 
 .Resumo-pedido h2 {
@@ -118,6 +119,13 @@
     border-radius: 8px;
     background: white;
     cursor: pointer;
+}
+
+.btn-whatsapp img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
 }
 
 .valores {
@@ -168,3 +176,31 @@
     color: #888;
     text-align: center;
 }
+
+/* ---------- Area do carrinho ---------------- */
+
+.carrinho-vazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+    gap: 16px;
+}
+
+.carrinho-vazio h2 {
+    font-size: 40px;
+}
+
+.carrinho-vazio p {
+    font-size: 20px;
+}
+
+.carrinho-vazio .botao-continuar {
+    width: 200px;
+    margin-top: 20px;
+}
+
+

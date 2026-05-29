@@ -12,7 +12,11 @@
 }
 
 .produto {
-    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 500px;
     
 }
 
@@ -22,19 +26,24 @@
     border: 1px solid #e0e0e0;
 }
 
+
 .img-posicoes-produto {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+    
 }
 
 .img-posicoes-produto img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
+    background-color: #F9F9F9;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 5px;
+    padding: 8px;
+    cursor: pointer; 
+    transition: all 0.2s ease;
 }
 
 .descricao-produto {
@@ -44,10 +53,32 @@
     gap: 10px;
 }
 
+.icone-promocional button{
+    background-color:#FF6B00;
+    width: 80px;
+    height: 30px;
+    color: White;
+    padding: 10px;
+    border-radius: 5px;
+    border: none; 
+    
+}
+
 .tamanhos-produto {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 8px;
+    width: 70%;
+    height: 110px;
+    margin-bottom: 30px;
+}
+
+
+.subtitulo-tamanho{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+
 }
 
 .tamanhos-produto button {
@@ -59,6 +90,18 @@
     margin-bottom: 10px;
 }
 
+.preco-linha-principal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.preco-linha-principal h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #111111;
+}
+
 .comprar {
     width: 50%;
     height: 45px;
@@ -66,9 +109,16 @@
     color: white;
     border: none;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.comprar-produto{
+    display: flex;
+    flex-direction:  column;
+    gap: 12px;
 }
 
 .adicionar-carrinho {
@@ -77,14 +127,16 @@
     background: white;
     border: 2px solid #5271FF;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .titulo-descricao{
-    font-weight: 600;
+    font-weight: 700;
+    margin-top: 20px;
 
 }
 .descricao-texto {
-    width: 40%;
+    width: 90%;
 }

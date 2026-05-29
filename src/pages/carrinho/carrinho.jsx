@@ -1,6 +1,9 @@
 import './carrinho.css'
 import Header from "../../components/header/header.jsx"
+import Footer from "../../components/footer/footer.jsx"
 import whatsapp from "../../assets/images/icone_whatsapp.svg"
+import bagazul from "../../assets/images/bag_azul.svg"
+import baglaranja from "../../assets/images/bag_laranja.svg"
 
 function Carrinho({ cart, removeItem,updateQty }){
     const finalizarPedido = () => {
@@ -19,6 +22,20 @@ function Carrinho({ cart, removeItem,updateQty }){
         <>
         <Header />
             <main className="container-carrinho">
+            {cart.length === 0 ? (
+                <div className="carrinho-vazio">
+                    <div className="carrinho-vazio-icones">
+                        <img src={bagazul} alt="bag azul" />
+                        <img src={baglaranja} alt="bag laranja" />
+                    </div>
+                    <h2>Sua sacola está vazia</h2>
+                    <p>Explore nossos produtos e encontre algo que você vai amar!</p>
+                    <button className="botao-continuar" onClick={() => window.location.href='/produtos'}>
+                        Ver produtos
+                    </button>
+                </div>
+            ) : (
+                <>
                 <section className="pagina-carrinho">
                     {cart.map((item) => (
                         <div className="item-carrinho" key={item.id}>
@@ -41,7 +58,7 @@ function Carrinho({ cart, removeItem,updateQty }){
                     <h2> Resumo do pedido </h2>
                         <div className="campo-calc-cep">
                             <input className="barra-de-calc" placeholder="Calcular frete CEP" />
-                            <button ClassName="btn-ok"> Ok </button>
+                            <button className="btn-ok"> Ok </button>
                         </div>
                         <div className="valores">
                             <div className="linha-valor">
@@ -52,7 +69,7 @@ function Carrinho({ cart, removeItem,updateQty }){
                                 <p> Frete </p>
                                 <p> R$ 19,90 </p>
                             </div>
-                            <p> Frete grátis a partir de R$ 199,00</p>
+                            <p> Entrega para todo o Brasil </p>
                             <hr /> 
                         </div>
 
@@ -68,7 +85,10 @@ function Carrinho({ cart, removeItem,updateQty }){
                     <p className="pagamento"> Pagamento 100% seguro · PIX · Cartão · Boleto</p>
                         </div>
                 </aside>
+                </>
+            )}
             </main>
+            <Footer />
         </>
     )
 }

@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 240px);
+    padding: 60px 0;
 }
 
 .card-login {
@@ -23,6 +24,11 @@
 .card-login h2 {
     text-align: center;
     font-size: 24px;
+}
+
+.campo-email-e-senha, 
+.info {
+    text-align: left !important;
 }
 
 .card-login p {
@@ -49,7 +55,5 @@
     border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
-}
-.botao-continuar p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }

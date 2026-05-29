@@ -1,4 +1,5 @@
 import Header from '../../components/header/header.jsx'
+import Footer from "../../components/footer/footer.jsx"
 import { useNavigate } from 'react-router-dom'
 import Produto1 from '../../assets/images/chinelo_nuvem.svg'
 import Produto2 from '../../assets/images/conjunto_esportivo.svg'
@@ -67,70 +68,65 @@ function Produtos(){
                 <input className="cor-faixa-preco" type="range" min="0" max="300" />
             </div>
         </aside>
-    <div className="container-cards">
-        <section className="cards-de-produtos1">
-            <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>                    
-                <img src={Produto1} alt="Chinelo Nuvem SoftStep Ultra"/>
-                <p>Chinelo Nuvem SoftStep Ultra</p>
-                <p className="preco">R$ 89,90</p>
-            </div>
-            <div className="card-produto">
-                <img src={Produto2} alt="Conjunto Fitness Active Laranja"/>
-                 <p>Conjunto Fitness Active Laranja</p>
-                 <p className="preco">R$ 159,90</p>
-             </div>
-        </section>
-        <section className="cards-de-produtos2">
-            <div className="card-produto">
-                <img src={Produto3} alt="Camiseta preta lisa"/>
-                <p>Camiseta Básica Comfort Preta</p>
-                <p className="preco"> R$ 59,90</p>
-            </div>
-            <div className="card-produto">
-                 <img src={Produto4} alt="Chinelo Slim Azul Marinho"/>
-                 <p>Chinelo Slim Azul Marinho</p>
-                 <p className="preco"> R$ 49,90</p>
-            </div>
-            <div className="card-produto">
-                <img src={Produto5} alt="Bolsa Esportiva Gym "/>
-                <p>Bolsa Esportiva Gym </p>
-                <p className="preco"> R$ 149,90</p>
-            </div>
-            <div className="card-produto">
-                <img src={Produto6} alt="Camiseta preta lisa"/>
-                <p>Calça Jeans Skinny Flex</p>
-                <p className="preco"> R$ 119,90</p>
-             </div>
-              <div className="card-produto">
-                <img src={Produto7} alt="Mix de Pulseiras Folheadas Gold"/>
-                <p>Calça Jeans Skinny Flex</p>
-                <p className="preco"> R$ 119,90</p>
-             </div>
-              <div className="card-produto">
-                <img src={Produto8} alt="Camiseta preta lisa"/>
-                <p>Calça Jeans Skinny Flex</p>
-                <p className="preco"> R$ 119,90</p>
-             </div>
-             <div className="card-produto">
-                <img src={Produto9} alt="Camiseta preta lisa"/>
-                <p>Calça Jeans Skinny Flex</p>
-                <p className="preco"> R$ 119,90</p>
-             </div>
-             <div className="card-produto">
-                <img src={Produto10} alt="Camiseta preta lisa"/>
-                <p>Calça Jeans Skinny Flex</p>
-                <p className="preco"> R$ 119,90</p>
-             </div>
-             <div className="card-produto">
-                <img src={Produto11} alt="Camiseta preta lisa"/>
-                <p>Calça Jeans Skinny Flex</p>
-                <p className="preco"> R$ 119,90</p>
-             </div>
-        </section>
-        </div>
+    <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>                    
+        <img src={Produto1} alt="Chinelo Nuvem SoftStep Ultra"/>
+        <p>Chinelo Nuvem SoftStep Ultra</p>
+        <p className="preco">R$ 89,90</p>
+    </div>
+    <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto2} alt="Conjunto Fitness Active Laranja"/>
+        <p>Conjunto Fitness Active Laranja</p>
+        <p className="preco">R$ 159,90</p>
+    </div>
+    <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto3} alt="Camiseta preta lisa"/>
+        <p>Camiseta Básica Comfort Preta</p>
+        <p className="preco"> R$ 59,90</p>
+    </div>
+    <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+         <img src={Produto4} alt="Chinelo Slim Azul Marinho"/>
+         <p>Chinelo Slim Azul Marinho</p>
+         <p className="preco"> R$ 49,90</p>
+    </div>
+    <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto5} alt="Bolsa Esportiva Gym "/>
+        <p>Bolsa Esportiva Gym </p>
+        <p className="preco"> R$ 149,90</p>
+    </div>
+    <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto6} alt="Camiseta preta lisa"/>
+        <p>Calça Jeans Skinny Flex</p>
+        <p className="preco"> R$ 119,90</p>
+     </div>
+     <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto7} alt="Mix de Pulseiras Folheadas Gold"/>
+        <p>Mix de Pulseiras Folheadas Gold</p>
+        <p className="preco"> R$ 119,90</p>
+     </div>
+     <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto8} alt="Camiseta preta lisa"/>
+        <p>Conjunto Esportivo Verde</p>
+        <p className="preco"> R$ 119,90</p>
+     </div>
+     <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto9} alt="Camiseta preta lisa"/>
+        <p>Calça Preta Elegance</p>
+        <p className="preco"> R$ 119,90</p>
+     </div>
+     <div className="card-produto" onClick={() => navigate('/produtos-individuais')} >
+        <img src={Produto10} alt="Camiseta preta lisa"/>
+        <p>Chinelo Laranja Vibrant</p>
+        <p className="preco"> R$ 119,90</p>
+     </div>
+     <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
+        <img src={Produto11} alt="Camiseta preta lisa"/>
+        <p>Camiseta Branca Classic</p>
+        <p className="preco"> R$ 119,90</p>
+     </div>
     </div>
         </main>
 
+ <Footer />
          </>
     )
 }

@@ -1,4 +1,5 @@
 import Header from '../../components/header/header.jsx'
+import Footer from "../../components/footer/footer.jsx"
 
 function EsqueciSenha(){
     return(
@@ -21,6 +22,7 @@ function EsqueciSenha(){
         </div>
     </div>
 </div>
+ <Footer />
         </>
     )
 }
