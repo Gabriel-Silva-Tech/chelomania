@@ -13,15 +13,18 @@ import whatsapp from "../../assets/images/icone_whatsapp.svg"
 import loja1 from "../../assets/images/loja_foto_1.svg"
 import loja2 from "../../assets/images/loja_foto_2.svg"
 import loja3 from "../../assets/images/loja_foto_3.svg"   
+import { useNavigate } from "react-router-dom"
 
 import "./home.css"
 function Home(){
+    
+    const navigate = useNavigate()
     return(
     <>
         <Header />
         <main>
             <div className="banner-home">
-                <img src={Banner} alt="banner da home"/>
+                <img src={Banner} alt="banner da home" onClick={() => navigate('/produtos')} />
                 <button className="Botao-banner"> Veja mais produtos</button>
             </div>
             <section className="secao-produtos">
@@ -60,7 +63,7 @@ function Home(){
                         <p className="preco"> R$ 119,90</p>
                     </div>
                 </div>
-                <button className="botao-produto"> Veja modelos </button>
+                <button className="botao-produto"  onClick={() => navigate('/produtos')}> Veja modelos </button>
             </section>
             <section className="espaco-unhas">
                 <div>
@@ -78,7 +81,7 @@ function Home(){
                     </div>
 
                     <div className="btn-agenda-horario">
-                        <button>Agendar horário
+                        <button button onClick={() => window.open('https://wa.me/5511999999999')}>Agendar horário
                         <img className="icone_whats" src={whatsapp} alt="icone whatsapp"/></button>
                     </div>
                     </div>
