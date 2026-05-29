@@ -24,8 +24,8 @@ function Home(){
         <Header />
         <main>
             <div className="banner-home">
-                <img src={Banner} alt="banner da home" onClick={() => navigate('/produtos')} />
-                <button className="Botao-banner"> Veja mais produtos</button>
+                <img src={Banner} alt="banner da home" />
+                <button className="Botao-banner"  onClick={() => navigate('/produtos')}> Veja mais produtos</button>
             </div>
             <section className="secao-produtos">
                 <h1>Produtos em <span>destaque</span></h1>
@@ -81,7 +81,7 @@ function Home(){
                     </div>
 
                     <div className="btn-agenda-horario">
-                        <button button onClick={() => window.open('https://wa.me/5511999999999')}>Agendar horário
+                        <button button onClick={() => window.open('https://wa.me/551195409338')}>Agendar horário
                         <img className="icone_whats" src={whatsapp} alt="icone whatsapp"/></button>
                     </div>
                     </div>

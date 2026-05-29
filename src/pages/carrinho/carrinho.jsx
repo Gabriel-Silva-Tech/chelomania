@@ -15,7 +15,7 @@ function Carrinho({ cart, removeItem,updateQty }){
     
     const texto = `Olá! Quero comprar:\n${mensagem}\n\nTotal: R$ ${total}`
     
-    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(texto)}`)
+    window.open(`https://wa.me/5511954093386?text=${encodeURIComponent(texto)}`)
 }
     
     return(

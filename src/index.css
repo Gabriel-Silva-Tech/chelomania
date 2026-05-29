@@ -3,3 +3,65 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+.card-produto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card-produto:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.Botao-banner,
+.botao-continuar, 
+.btn-whatsapp, 
+.botao-produto, 
+.barra-busca-suporte button,
+.cta-suporte button,
+.btn-agenda-horario button {
+    transition: background-color 0.2s ease, transform 0.1s ease, color 0.2s ease !important;
+}
+
+
+.botao-continuar:hover, 
+.btn-whatsapp:hover, 
+.botao-produto:hover {
+    background-color: #E05E00 !important;
+}
+
+
+.botao-continuar:active, 
+.btn-whatsapp:active, 
+.botao-produto:active,
+.barra-busca-suporte button:active,
+.cta-suporte button:active,
+.btn-agenda-horario button:active,
+.quantidade button:active {
+    transform: scale(0.96) !important;
+}
+
+.container-nav a {
+    position: relative;
+    transition: color 0.2s ease !important;
+}
+
+.container-nav a:hover {
+    color: #FF6B00 !important;
+}
+
+
+.container-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FF6B00;
+    transition: width 0.3s ease;
+}
+
+.container-nav a:hover::after {
+    width: 100%;
+}

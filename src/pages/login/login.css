@@ -58,6 +58,26 @@
     margin-bottom: 20px;
 }
 
+.campo-email-e-senha p, 
+.campo-cadastro p {
+    text-align: left !important;
+}
+
+.card-login p a {
+    color:#FF6B00 !important; 
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.card-login p a:hover {
+    text-decoration: underline !important;
+}
+
+.botao-continuar a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
 @media (max-width: 768px) {
 
     .card-login{

@@ -20,7 +20,7 @@ function EsqueciSenha(){
         </div>
         <div className="btn-continua">
             <button className="botao-continuar"> Enviar </button> 
-            <p> Lembrou sua senha? <Link to="/login"> Voltar</Link></p>
+            <p> Lembrou sua senha? <Link to="/login"> Voltar </Link></p>
         </div>
     </div>
 </div>
