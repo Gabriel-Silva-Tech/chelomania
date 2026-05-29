@@ -1,8 +1,8 @@
 import './carrinho.css'
 import Header from "../../components/header/header.jsx"
 import Footer from "../../components/footer/footer.jsx"
-import whatsapp from "../../assets/images/icone_whatsapp.svg"
 import bagazul from "../../assets/images/bag_azul.svg"
+import whatsapp from "../../assets/images/icone_whatsapp.svg"
 import baglaranja from "../../assets/images/bag_laranja.svg"
 
 function Carrinho({ cart, removeItem,updateQty }){
