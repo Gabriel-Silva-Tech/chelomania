@@ -2,6 +2,7 @@ import Header from "../../components/header/header.jsx"
 import Footer from "../../components/footer/footer.jsx"
 import "../login/login.css"
 import "./cadastro.css"
+import { Link } from "react-router-dom"
 
 
 function Cadastro (){
@@ -15,7 +16,7 @@ function Cadastro (){
             <h2> Faça seu cadastro </h2>
             <p> Crie sua conta para continuar </p>
         </div>
-        <div className="campo-cadastro">
+        <div className="campo-cadastro-cadastro">
                 <p>Nome</p>
             <input className="nome" placeholder="insira seu nome"></input>
                 <p>Email</p>
@@ -26,7 +27,7 @@ function Cadastro (){
             <input className="senha" placeholder="Confirme com sua senha"></input>
         </div>
         <div className="btn-continua">
-            <button className="botao-continuar"> Continuar</button> 
+            <button className="botao-continuar"> <Link to="/login"> Continuar </Link> </button> 
         </div>
     </div>
 </div>

@@ -23,6 +23,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .logo_chelomania{
@@ -57,7 +59,6 @@ body{
     padding-right: 35px;
     font-size: 16px;
     padding-left: 15px;
-    
 }
 
 .icone-lupa{
@@ -72,5 +73,79 @@ body{
     flex-direction: row;
     gap: 15px;
     padding-right: 70px;
+}
 
+/* ESTILO DO BOTÃO SANDUÍCHE */
+.menu-sanduiche {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-sanduiche .linha {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .logo_chelomania {
+        padding-left: 20px;
+    }
+
+    .container-bag-e-login {
+        padding-right: 20px;
+    }
+
+    .menu-sanduiche {
+        display: flex;
+    }
+
+    .container-barra-pesquisa {
+        display: none; 
+    }
+
+    .container-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #5271FF;
+        gap: 0;
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .container-nav.menu-ativo {
+        max-height: 250px;
+    }
+
+    .container-nav a {
+        width: 100%;
+        padding: 15px 5%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+    }
+
+    .menu-sanduiche.aberto .linha:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 5px);
+    }
+    .menu-sanduiche.aberto .linha:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-sanduiche.aberto .linha:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -5px);
+    }
 }

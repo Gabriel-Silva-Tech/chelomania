@@ -1,5 +1,7 @@
 import Header from '../../components/header/header.jsx'
 import Footer from "../../components/footer/footer.jsx"
+import {Link} from "react-router-dom"
+import "./esqueci-senha.css";
 
 function EsqueciSenha(){
     return(
@@ -18,7 +20,7 @@ function EsqueciSenha(){
         </div>
         <div className="btn-continua">
             <button className="botao-continuar"> Enviar </button> 
-            <p> Lembrou sua senha? Voltar</p>
+            <p> Lembrou sua senha? <Link to="/login"> Voltar</Link></p>
         </div>
     </div>
 </div>

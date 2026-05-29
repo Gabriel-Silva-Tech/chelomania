@@ -173,3 +173,42 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+ @media (max-width: 768px) {
+    
+    .cards-suporte {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 24px !important; 
+        padding: 30px 20px !important;
+        width: 100% !important;
+    }
+
+    .card-suporte {
+        width: 100% !important;
+        max-width: 280px !important; 
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-suporte h1 {
+        font-size: 24px;
+    }
+
+    .barra-busca-suporte {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .barra-busca-suporte button {
+        width: 100%;
+    }
+
+    .faq-item::after {
+        margin-top: 0;
+        align-self: flex-start; 
+    }
+}

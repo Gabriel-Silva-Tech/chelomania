@@ -57,3 +57,10 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+
+    .card-login{
+        width: 90%
+    }
+}

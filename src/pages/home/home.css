@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     padding: 0;
     box-sizing: border-box;
@@ -314,60 +313,201 @@
   margin: 40px auto 0 auto;    
   overflow: hidden;            
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); 
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .mapa iframe {
   width: 100%;                 
+  max-width: 100%;
   height: 480px;               
   border: 0;
+  display: block;
 }
 
-
+.icone-lupa-preta {
+    width: 20px;
+    height: 20px;
+}
 
 /*--------------------------- RESPONSIVIDADE ---------------------------*/
 
+@media (max-width: 1024px) {
+    .sobre-chelo-mania {
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .sobre-chelo-mania h2 {
+        font-size: 38px;
+    }
+    
+    .espaco-unhas {
+        width: 90%;
+        height: auto;
+        flex-direction: column; 
+    }
+
+    .espaco-unhas > div:first-child {
+        padding: 40px;
+    }
+
+    .imgs-loja img {
+        width: 48%; 
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
-  .sobre-loja {
-    flex-direction: column;  
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .sobre-loja div:first-child {
-    max-width: 100%;
-    text-align: center;
-  }
-  
-  .sobre-loja h2 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .imgs-loja {
-    justify-content: center;
-    flex-wrap: wrap;         
-  }
-  
-  .imgs-loja img {
-    width: 100%;
-    max-width: 280px;
-  }
+    .sobre-loja {
+        flex-direction: column;  
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    .sobre-loja div:first-child {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .sobre-loja h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .imgs-loja {
+        justify-content: center;
+        flex-wrap: wrap;         
+    }
+    
+    .imgs-loja img {
+        width: 100%;
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 768px) {
-  .endereco {
-    padding: 40px 15px;
-  }
+    .Botao-banner {
+        width: 160px;
+        height: 36px;
+        font-size: 14px;
+        bottom: 20px; 
+    }
+
+    .secao-produtos {
+        padding: 30px 10px; 
+    }
+
+    .secao-produtos h1, 
+    .secao-produtos h1 span {
+        font-size: 32px; 
+    }
+
+ 
+    .container-produtos1,
+    .container-produtos2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .card-produto {
+        padding: 8px; 
+    }
+
+    .card-produto img {
+        height: 200px; 
+        object-fit: contain; 
+    }
+
+    .card-produto p {
+        font-size: 13px; 
+    }
+
+    .botao-produto {
+        width: 100%; 
+        font-size: 14px;
+        height: 36px;
+    }
+    
+    .espaco-unhas h2 {
+        font-size: 32px;
+    }
+
+    .espaco-unhas p {
+        width: 100%;
+        font-size: 16px;
+    }
   
-  .endereco h2 {
-    font-size: 2.2rem;        
-  }
+    .sessao-1, .sessao-2 {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    
+    .sobre-chelo-mania {
+        flex-direction: column-reverse; 
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .sobre-chelo-mania p {
+        width: 100%;
+    }
+    
+    .lurdes-dona-chelomania {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .lurdes-dona-chelomania img {
+        width: 280px; 
+        margin-right: 0;
+    }
+    
+    .lurdes-dona-chelomania::before,
+    .lurdes-dona-chelomania::after {
+        display: none;
+    }
+
+    .endereco {
+        padding: 40px 15px;
+    }
   
-  .endereco p {
-    font-size: 1.1rem;
-  }
+    .endereco h2 {
+        font-size: 2.2rem;        
+    }
   
-  .mapa iframe {
-    height: 350px;            
-  }
+    .endereco p {
+        font-size: 1.1rem;
+    }
+  
+    .mapa iframe {
+        height: 350px;            
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .container-produtos1,
+    .container-produtos2 {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px; 
+
+    .card-produto img {
+        height: 150px; 
+    }
+
+    .card-produto p {
+        font-size: 12px;
+    }
+    
+    .preco {
+        font-size: 14px;
+    }
+
+    .imgs-loja img {
+        width: 100%; 
+    }
+}
+
 }
