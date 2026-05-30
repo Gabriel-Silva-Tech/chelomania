@@ -26,6 +26,7 @@ function Header() {
         <Link to="/produtos" onClick={() => setMenuAberto(false)}>Chinelos</Link>
         <Link to="/produtos" onClick={() => setMenuAberto(false)}>Vestuário</Link>
         <Link to="/produtos" onClick={() => setMenuAberto(false)}>Acessórios</Link>
+        <Link to="/suporte" onClick={() => setMenuAberto(false)}>Suporte</Link>
       </nav>
 
       {}

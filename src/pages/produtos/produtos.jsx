@@ -94,39 +94,38 @@ function Produtos(){
         <p className="preco"> R$ 149,90</p>
     </div>
     <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
-        <img src={Produto6} alt="Camiseta preta lisa"/>
+        <img src={Produto6} alt="Calça Jeans Skinny Flex"/>
         <p>Calça Jeans Skinny Flex</p>
-        <p className="preco"> R$ 119,90</p>
+        <p className="preco"> R$ 59,90 </p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
         <img src={Produto7} alt="Mix de Pulseiras Folheadas Gold"/>
         <p>Mix de Pulseiras Folheadas Gold</p>
-        <p className="preco"> R$ 119,90</p>
+        <p className="preco"> R$ 39,90 </p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
-        <img src={Produto8} alt="Camiseta preta lisa"/>
+        <img src={Produto8} alt="Conjunto Esportivo Verde"/>
         <p>Conjunto Esportivo Verde</p>
-        <p className="preco"> R$ 119,90</p>
+        <p className="preco"> R$ 59,90 </p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
-        <img src={Produto9} alt="Camiseta preta lisa"/>
+        <img src={Produto9} alt="alça Preta Elegance"/>
         <p>Calça Preta Elegance</p>
         <p className="preco"> R$ 119,90</p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')} >
-        <img src={Produto10} alt="Camiseta preta lisa"/>
+        <img src={Produto10} alt="Chinelo Laranja Vibrant"/>
         <p>Chinelo Laranja Vibrant</p>
         <p className="preco"> R$ 119,90</p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
-        <img src={Produto11} alt="Camiseta preta lisa"/>
+        <img src={Produto11} alt="Camiseta branca classic"/>
         <p>Camiseta Branca Classic</p>
         <p className="preco"> R$ 119,90</p>
      </div>
     </div>
         </main>
-
- <Footer />
+        <Footer />
          </>
     )
 }
