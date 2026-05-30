@@ -3,10 +3,10 @@ import Footer from "../../components/footer/footer.jsx"
 import "../login/login.css"
 import "./cadastro.css"
 import { Link } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom"
 
 function Cadastro (){
-
+    const navigate = useNavigate()
     return(
         <>
      <Header /> 
@@ -27,7 +27,7 @@ function Cadastro (){
             <input className="senha" placeholder="Confirme com sua senha"></input>
         </div>
         <div className="btn-continua">
-            <button className="botao-continuar"> <Link to="/login"> Continuar </Link> </button> 
+            <button className="botao-continuar" onClick={() => navigate('/login')}>  Continuar  </button> 
         </div>
     </div>
 </div>

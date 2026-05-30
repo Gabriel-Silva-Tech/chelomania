@@ -16,9 +16,11 @@ function Header() {
   return (
     <header className="container-header">
       {}
+      <Link to= "/">
       <div className="logo_chelomania">
         <img src={Logo} alt="logotipo da empresa Chelomania" />
       </div>
+      </Link>
 
       {}
       <nav className={`container-nav ${menuAberto ? "menu-ativo" : ""}`}> 

@@ -164,6 +164,13 @@ input[type="range"]{
     padding: 20px;
 }
 
+.container-produtos {
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-column: 2 / -1;
+}
+
 .card-produto:nth-of-type(1) {
     grid-column: 2;
     grid-row: 1;
@@ -226,14 +233,32 @@ input[type="range"]{
 
 
 @media (max-width: 768px) {
+
+
     .container-pagina-produtos {
         grid-template-columns: 1fr; 
         gap: 25px;
     }
 
+    .container-produtos {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+    }
+
     .categorias {
         justify-content: center;
         margin-left: 0;
+    }
+
+      .categorias button {
+        width: auto;
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+    
+
+    .todos-os-produtos{
+        height: 20px;
     }
 
 

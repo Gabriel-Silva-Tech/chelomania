@@ -24,7 +24,7 @@ function Produtos(){
         <Header /> 
         <main>
         <nav className="categorias"> 
-            <button> Todos os produtos </button>
+            <button className="todos-os-produtos"> Todos os produtos </button>
             <button> Chinelos </button>
             <button> Vestuário </button>
             <button> Acessórios </button>
@@ -68,6 +68,7 @@ function Produtos(){
                 <input className="cor-faixa-preco" type="range" min="0" max="300" />
             </div>
         </aside>
+<div className="container-produtos">
     <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>                    
         <img src={Produto1} alt="Chinelo Nuvem SoftStep Ultra"/>
         <p>Chinelo Nuvem SoftStep Ultra</p>
@@ -106,17 +107,17 @@ function Produtos(){
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
         <img src={Produto8} alt="Conjunto Esportivo Verde"/>
         <p>Conjunto Esportivo Verde</p>
-        <p className="preco"> R$ 59,90 </p>
+        <p className="preco">  R$ 129,90 </p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
         <img src={Produto9} alt="alça Preta Elegance"/>
         <p>Calça Preta Elegance</p>
-        <p className="preco"> R$ 119,90</p>
+        <p className="preco"> R$ 98,90 </p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')} >
         <img src={Produto10} alt="Chinelo Laranja Vibrant"/>
         <p>Chinelo Laranja Vibrant</p>
-        <p className="preco"> R$ 119,90</p>
+        <p className="preco"> R$ 54,90</p>
      </div>
      <div className="card-produto" onClick={() => navigate('/produtos-individuais')}>
         <img src={Produto11} alt="Camiseta branca classic"/>
@@ -124,6 +125,7 @@ function Produtos(){
         <p className="preco"> R$ 119,90</p>
      </div>
     </div>
+</div>
         </main>
         <Footer />
          </>
